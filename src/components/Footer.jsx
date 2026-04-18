@@ -6,8 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-primary-dark text-white pt-20 pb-10">
       <div className="container-custom">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
           <div className="space-y-6">
             <Link to="/" className="flex items-center space-x-3">
               <img src={logo} alt="Mumtaaz Logo" className="h-12 w-auto" />
@@ -28,7 +27,6 @@ const Footer = () => {
             </div>
           </div>
 
-
           <div>
             <h4 className="font-serif text-lg font-bold mb-6 text-secondary underline decoration-secondary/30 underline-offset-8">Quick Links</h4>
             <ul className="space-y-4 text-sm text-white/60">
@@ -40,7 +38,6 @@ const Footer = () => {
             </ul>
           </div>
 
-
           <div>
             <h4 className="font-serif text-lg font-bold mb-6 text-secondary underline decoration-secondary/30 underline-offset-8">Programs</h4>
             <ul className="space-y-4 text-sm text-white/60">
@@ -50,7 +47,6 @@ const Footer = () => {
               <li>Tarbiyah Program</li>
             </ul>
           </div>
-
 
           <div>
             <h4 className="font-serif text-lg font-bold mb-6 text-secondary underline decoration-secondary/30 underline-offset-8">Contact Us</h4>
@@ -68,6 +64,18 @@ const Footer = () => {
                 <a href="mailto:abumudhafffar94@gmail.com" className="hover:text-secondary transition-colors break-all">abumudhafffar94@gmail.com</a>
               </li>
             </ul>
+          </div>
+
+          <div className="flex flex-col items-center lg:items-end">
+            <h4 className="font-serif text-lg font-bold mb-6 text-secondary lg:text-right w-full">Digital Access</h4>
+            <div className="bg-white p-3 rounded-2xl shadow-xl shadow-secondary/10 border-2 border-secondary/20 group hover:border-secondary transition-colors">
+               <img 
+                src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://mumtaaz-girls-high-school.vercel.app/" 
+                alt="Website QR Code" 
+                className="w-32 h-32 md:w-36 md:h-36"
+               />
+            </div>
+            <p className="mt-4 text-[10px] text-white/40 uppercase tracking-widest font-bold lg:text-right w-full">Scan to Visit Website</p>
           </div>
         </div>
 
