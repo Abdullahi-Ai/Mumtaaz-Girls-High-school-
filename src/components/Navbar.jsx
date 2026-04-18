@@ -67,11 +67,18 @@ const Navbar = () => {
               <img src={logo} alt="Mumtaaz Logo" className="relative h-14 w-auto md:h-16 transition-transform duration-700 group-hover:scale-110" />
             </div>
             <div className="flex flex-col">
-              <span className={`font-serif text-2xl md:text-3xl font-bold tracking-tighter leading-none ${isScrolled ? 'text-white' : 'text-primary'}`}>Mumtaaz</span>
-              <span className={`text-[10px] md:text-[11px] uppercase tracking-[0.3em] font-black ${isScrolled ? 'text-secondary' : 'text-primary/70'}`}>Girls High School</span>
+              <span className={`font-serif text-2xl md:text-3xl font-bold tracking-tighter leading-none ${
+                isScrolled || location.pathname !== '/' ? 'text-white' : 'text-primary'
+              }`}>
+                Mumtaaz
+              </span>
+              <span className={`text-[10px] md:text-[11px] uppercase tracking-[0.3em] font-black ${
+                isScrolled ? 'text-secondary' : location.pathname !== '/' ? 'text-secondary' : 'text-primary/70'
+              }`}>
+                Girls High School
+              </span>
             </div>
           </Link>
-
 
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
@@ -81,7 +88,9 @@ const Navbar = () => {
                 className={`relative text-sm font-medium transition-colors duration-300 ${
                   location.pathname === link.path
                     ? 'text-secondary'
-                    : isScrolled ? 'text-white hover:text-secondary' : 'text-primary hover:text-secondary'
+                    : (isScrolled || location.pathname !== '/') 
+                      ? 'text-white hover:text-secondary' 
+                      : 'text-primary hover:text-secondary'
                 }`}
               >
                 {link.name}
@@ -101,10 +110,9 @@ const Navbar = () => {
             </button>
           </div>
 
-
           <button
             className={`md:hidden p-2 rounded-2xl transition-all duration-300 ${
-              isScrolled ? 'text-white bg-white/10' : 'text-primary bg-primary/5'
+              isScrolled || location.pathname !== '/' ? 'text-white bg-white/10' : 'text-primary bg-primary/5'
             }`}
             onClick={toggleMenu}
           >
