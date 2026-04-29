@@ -41,10 +41,10 @@ const Footer = () => {
           <div>
             <h4 className="font-serif text-lg font-bold mb-6 text-secondary underline decoration-secondary/30 underline-offset-8">Programs</h4>
             <ul className="space-y-4 text-sm text-white/60">
-              <li>Junior School</li>
-              <li>Senior School</li>
-              <li>Quran Memorization</li>
-              <li>Tarbiyah Program</li>
+              <li><Link to="/academics" className="hover:text-secondary transition-colors">Junior School</Link></li>
+              <li><Link to="/academics" className="hover:text-secondary transition-colors">Senior School</Link></li>
+              <li><Link to="/islamic-life" className="hover:text-secondary transition-colors">Quran Memorization</Link></li>
+              <li><Link to="/islamic-life" className="hover:text-secondary transition-colors">Tarbiyah Program</Link></li>
             </ul>
           </div>
 

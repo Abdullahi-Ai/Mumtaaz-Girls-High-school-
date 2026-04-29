@@ -177,9 +177,15 @@ const Admissions = () => {
             <p className="text-primary/70 mb-8 max-w-xl mx-auto font-medium">
                We maintain small class sizes to ensure personalized attention. Begin your journey with us today.
             </p>
-            <button className="bg-primary text-white px-8 md:px-12 py-4 rounded-full font-bold text-lg md:text-xl hover:scale-105 transition-transform shadow-2xl">
-               Download Application Form
-            </button>
+            <a 
+              href="/Mumtaaz_Admission_Form_Fees.pdf" 
+              download="Mumtaaz_Admission_Form_Fees.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative z-20 inline-block bg-primary text-white px-8 md:px-12 py-4 rounded-full font-bold text-lg md:text-xl hover:scale-105 transition-transform shadow-2xl"
+            >
+               Download Admission Form & Fees
+            </a>
          </div>
       </section>
     </div>

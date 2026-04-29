@@ -4,8 +4,16 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Security: Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://api.qrserver.com https://wa.me; connect-src 'self' https://wa.me;" />
+
     <title>Mumtaaz Girls High School | Where Faith Meets Excellence</title>
     <meta name="description" content="A premier Islamic girls' institution in Nakuru, Kenya. Nurturing disciplined, confident, and knowledgeable young Muslim women through academic and spiritual growth." />
+    
+    <!-- Performance: Preconnect to fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
     <div id="root"></div>

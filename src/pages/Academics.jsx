@@ -7,16 +7,28 @@ const Academics = () => {
   const { openModal } = useModal();
   const categories = [
     {
-      title: "Junior School",
-      subtitle: "Grade 7",
-      description: "Our Junior School program is designed to bridge the gap between primary and secondary education, focusing on core competencies, character development, and Islamic integration.",
-      features: ["Competency Based Curriculum", "Advanced ICT Integration", "Islamic Studies Alignment", "Life Skills Training"]
+      title: "Junior School Boarding",
+      subtitle: "(Grades 7, 8 & 9)",
+      description: "A secure and nurturing boarding environment for young learners, focusing on academic excellence and spiritual growth.",
+      features: ["Full Boarding Facilities", "24/7 Security", "Guided Study Sessions", "Tarbiyah Programs"]
     },
     {
-      title: "Senior School",
-      subtitle: "Forms 3 & 4",
-      description: "A results-oriented program focused on KCSE excellence and university readiness. We emphasize deep conceptual understanding and disciplined study habits.",
-      features: ["Intensive KCSE Preparation", "Career Mentorship", "Scientific Inquiry", "Leadership Programs"]
+      title: "Junior School Day",
+      subtitle: "(Grades 7, 8 & 9)",
+      description: "Quality education for day students, with a curriculum integrated with Islamic values and core competencies.",
+      features: ["Day Scholar Program", "Structured Learning", "Islamic Integration", "Co-curricular Activities"]
+    },
+    {
+      title: "Senior School Boarding",
+      subtitle: "(Grades 10, 11 & 12) & Form 3 & 4",
+      description: "Intensive KCSE preparation in a focused boarding environment, designed for students aiming for university excellence.",
+      features: ["KCSE Focus", "Career Guidance", "Leadership Training", "Spiritual Mentorship"]
+    },
+    {
+      title: "Senior School Day",
+      subtitle: "(Grades 10, 11 & 12) & Form 3 & 4",
+      description: "Advanced learning for day students, emphasizing discipline, academic rigor, and character development.",
+      features: ["Flexible Day Program", "Science & Arts Tracks", "Modern Labs Access", "Mentorship Sessions"]
     }
   ];
 
@@ -155,7 +167,7 @@ const Academics = () => {
         </p>
         <button 
           onClick={openModal}
-          className="inline-flex items-center space-x-2 md:space-x-4 bg-primary text-white px-8 md:px-10 py-5 rounded-full font-bold shadow-xl shadow-primary/20 hover:scale-105 transition-transform hover:bg-primary-dark"
+          className="inline-flex items-center space-x-2 md:space-x-4 bg-primary text-white px-8 md:px-10 py-5 rounded-full font-bold shadow-xl shadow-primary/20 hover:scale-105 transition-transform hover:bg-primary-dark mx-auto block"
         >
            <span className="text-base md:text-lg">KCSE Candidate? Apply Now</span>
            <Award className="text-secondary shrink-0" size={24} />

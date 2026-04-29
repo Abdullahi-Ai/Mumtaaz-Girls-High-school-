@@ -141,15 +141,27 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {[
               {
-                title: 'Junior School',
-                grade: 'Grade 7',
-                desc: 'Transitioning to Junior Secondary with a strong focus on core competencies and Islamic values integration.',
+                title: 'Junior Boarding',
+                grade: '(Grades 7, 8 & 9)',
+                desc: 'A secure and nurturing boarding environment focused on early excellence.',
                 img: buildingImg
               },
               {
-                title: 'Senior School',
-                grade: 'Forms 3 & 4',
-                desc: 'Intensive KCSE preparation coupled with leadership training and spiritual mentorship.',
+                title: 'Junior Day',
+                grade: '(Grades 7, 8 & 9)',
+                desc: 'Quality education for day students with strong Islamic foundation.',
+                img: buildingImg
+              },
+              {
+                title: 'Senior Boarding',
+                grade: '(Grades 10, 11 & 12) & Form 3 & 4',
+                desc: 'Intensive KCSE preparation in a results-oriented boarding facility.',
+                img: labImg
+              },
+              {
+                title: 'Senior Day',
+                grade: '(Grades 10, 11 & 12) & Form 3 & 4',
+                desc: 'Advanced day school program focusing on university readiness.',
                 img: labImg
               }
             ].map((program, idx) => (

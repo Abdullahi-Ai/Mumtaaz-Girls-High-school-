@@ -128,10 +128,11 @@ const AdmissionModal = ({ isOpen, onClose }) => {
                       >
                         <option value="">Select Grade</option>
                         <option value="Grade 7">Grade 7</option>
-                        <option value="Form 1">Form 1</option>
-                        <option value="Form 2">Form 2</option>
-                        <option value="Form 3">Form 3</option>
-                        <option value="Form 4">Form 4</option>
+                        <option value="Grade 8">Grade 8</option>
+                        <option value="Grade 9">Grade 9</option>
+                        <option value="Grade 10">Grade 10</option>
+                        <option value="Grade 11 (Form 3)">Grade 11 (Form 3)</option>
+                        <option value="Grade 12 (Form 4)">Grade 12 (Form 4)</option>
                       </select>
                     </div>
                   </div>
@@ -164,6 +165,20 @@ const AdmissionModal = ({ isOpen, onClose }) => {
                       placeholder="Briefly explain your reason..."
                     />
                   </div>
+                </div>
+
+                <div className="flex items-center justify-between px-1">
+                   <p className="text-[10px] text-charcoal/40 font-medium">By submitting, you agree to our terms.</p>
+                   <a 
+                     href="/Mumtaaz_Admission_Form_Fees.pdf" 
+                     download="Mumtaaz_Admission_Form_Fees.pdf"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className="text-[10px] text-secondary font-bold hover:underline flex items-center space-x-1"
+                   >
+                     <BookOpen size={10} />
+                     <span>Download Admission Form & Fees</span>
+                   </a>
                 </div>
 
                 <button
