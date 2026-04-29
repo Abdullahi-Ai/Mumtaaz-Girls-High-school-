@@ -29,22 +29,22 @@ const Footer = () => {
 
           <div>
             <h4 className="font-serif text-lg font-bold mb-6 text-secondary underline decoration-secondary/30 underline-offset-8">Quick Links</h4>
-            <ul className="space-y-4 text-sm text-white/60">
-              <li><Link to="/" className="hover:text-secondary transition-colors">Home</Link></li>
-              <li><Link to="/academics" className="hover:text-secondary transition-colors">Academics</Link></li>
-              <li><Link to="/islamic-life" className="hover:text-secondary transition-colors">Islamic Life</Link></li>
-              <li><Link to="/admissions" className="hover:text-secondary transition-colors">Admissions</Link></li>
-              <li><Link to="/blog" className="hover:text-secondary transition-colors">Blog</Link></li>
+            <ul className="space-y-2 text-sm text-white/60">
+              <li><Link to="/" className="hover:text-secondary transition-colors block py-1">Home</Link></li>
+              <li><Link to="/academics" className="hover:text-secondary transition-colors block py-1">Academics</Link></li>
+              <li><Link to="/islamic-life" className="hover:text-secondary transition-colors block py-1">Islamic Life</Link></li>
+              <li><Link to="/admissions" className="hover:text-secondary transition-colors block py-1">Admissions</Link></li>
+              <li><Link to="/blog" className="hover:text-secondary transition-colors block py-1">Blog</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-serif text-lg font-bold mb-6 text-secondary underline decoration-secondary/30 underline-offset-8">Programs</h4>
-            <ul className="space-y-4 text-sm text-white/60">
-              <li><Link to="/academics" className="hover:text-secondary transition-colors">Junior School</Link></li>
-              <li><Link to="/academics" className="hover:text-secondary transition-colors">Senior School</Link></li>
-              <li><Link to="/islamic-life" className="hover:text-secondary transition-colors">Quran Memorization</Link></li>
-              <li><Link to="/islamic-life" className="hover:text-secondary transition-colors">Tarbiyah Program</Link></li>
+            <ul className="space-y-2 text-sm text-white/60">
+              <li><Link to="/academics" className="hover:text-secondary transition-colors block py-1">Junior School</Link></li>
+              <li><Link to="/academics" className="hover:text-secondary transition-colors block py-1">Senior School</Link></li>
+              <li><Link to="/islamic-life" className="hover:text-secondary transition-colors block py-1">Quran Memorization</Link></li>
+              <li><Link to="/islamic-life" className="hover:text-secondary transition-colors block py-1">Tarbiyah Program</Link></li>
             </ul>
           </div>
 
